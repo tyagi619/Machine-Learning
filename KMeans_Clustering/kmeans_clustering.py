@@ -53,6 +53,7 @@ def train(k_centres,c):
                 #set number_points and sum_points to zero for next iteration
                 number_points[j] = 0;
                 sum_points[j] = np.zeros((x.shape[1],))
+    # return the final cluster centres and cluster number assigned to each datapoint
     return k_centres,c
 
 k_centres = []  # stores the centre of each cluster
